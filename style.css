@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(234, 231, 231);
+    font-family: "Montserrat", sans-serif;
+    
+}
+:root {
+    --color-primary : #c61e1e ;
+    --color-secondry : #3ea343 ;
+}
+
+/* ///////////////header///////////// */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    color: #45494d;
+    padding: 0% 2%;
+}
+h3{
+    font-size:20px ;
+    letter-spacing: 0.5px ;
+}
+.logo{
+    width: 4%;
+}
+.user,.pin{
+  text-align: center;  
+  font-size: 15px;
+  border-radius: 15px;
+  border: transparent;
+  width: 80px;
+  padding: 6px;
+  transition: 0.5s all;
+}
+
+.log-in{
+    cursor: pointer;
+    margin-left: 8px;
+}
+/* ////////////////////Main /////////////////////*/
+
+.main-header{
+    width: 80%;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center ;
+}
+.current{
+    color: #45494d;
+}
+.current p{
+    margin-top:0% ;
+}
+.amount{
+    color: #45494d;
+    font-size:40px ;
+    font-weight:normal;
+}
+.money-mvt{
+     min-height: 600px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: 80%;
+   margin: 0px auto;
+}
+/* ////////left-side /////// */
+
+.left-side{
+    width: 50%;
+  background-color: white;
+  border-radius:10px;
+  height: 580px;
+    overflow: scroll;
+    padding: 20px;
+}
+
+.deposit-container,.withdrawal-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+      
+}
+.deposit{
+  background: linear-gradient(135deg, #7ed481 , #3ea343 );
+  color: white;
+  border-radius: 10px;
+  padding: 3px;
+  margin-right: 20px;
+   font-size: 12px;
+}
+.withdrawal {
+background: linear-gradient(135deg, #e35858 0%, #ba3f3f );
+color: white;
+border-radius: 10px;
+padding: 5px;
+margin-right: 20px;
+font-size: 12px;
+}
+.date{
+    font-size: 12px;
+     color: #45494d;
+}
+.with-amount,.dep-amount{
+      color: #45494d;
+      font-size: 15px;
+}
+/* //////right side ////// */
+
+.right-side  {
+     
+        width: 45%;
+        margin-left: 10px;
+}
+.transfert-box{
+     border-radius: 10px;
+  margin: 20px 20px;
+    width: 65%;
+    height: 150px;
+  background: linear-gradient(135deg, #ffc107 , #ff9800 );
+  padding: 10px 40px;
+}
+.transfert-form{
+    position: relative;
+    text-align: center;
+}
+
+.box-title {
+    margin-left: 70px;
+}
+.transfert-user,.amount-transfert-input{
+ width: 110px;
+ padding: 5px;
+ border-radius: 10px;
+  border: transparent;
+ background-color: rgba(255, 255, 255, 0.605);
+}
+.label-transfert{
+   position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.label-amount-transfert{
+  position: absolute;
+  top: 30px;
+  right: 90px;
+}
+.transfert-button{
+    width: 40px;
+    border: transparent;
+    padding: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* loan-box */
+.loan-box{
+       border-radius: 10px;
+  margin: 20px 20px;
+    width: 65%;
+    height: 150px;
+  background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+  padding: 10px 40px;
+}
+.loan-input{
+    width: 50%;
+ padding: 5px;
+ border-radius: 10px;
+  border: transparent;
+ background-color: rgba(255, 255, 255, 0.605);
+}
+.loan-form{
+    position: relative;
+}
+.label-amount-loan{
+ position: absolute;
+top: 30px;
+left: 50px;
+}
+.loan-button{
+    width: 40px;
+    border: transparent;
+    padding: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+ /* <!-- ///// close account ::  --> */
+ .close-form {
+    position: relative;
+}
+.close-box{
+         border-radius: 10px;
+  margin: 20px 20px;
+    width: 65%;
+    height: 150px;
+background: linear-gradient(135deg, #c61e1e , #881313 );
+  padding: 10px 40px;
+}
+.close-user,.close-pin{
+    width: 110px;
+ padding: 5px;
+ border-radius: 10px;
+  border: transparent;
+ background-color: rgba(255, 255, 255, 0.605);
+}
+.label-user-close{
+    position: absolute;
+   top: 30px;
+   left:10px;
+}
+.label-pin-close{
+    position: absolute;
+    top: 30px;
+right:85px;
+}
+/* footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mov-info-in ,.mov-info-out , .mov-info-interset{
+    font-size: 15px;
+}
+.mov-average-in{
+    font-size: 25px;
+    font-weight: 500;
+    color: #00aa09;
+    margin-right: 15px;
+}
+.mov-average-out{
+ font-size: 25px;
+    font-weight: 500;
+    color: #c01600;
+    margin-right: 15px;
+}
+.mov-average-interest {
+      font-size: 25px;
+    font-weight: 500;
+    color: var(--color-secondry);
+    margin-right: 15px;
+}
+.looged-out-timer {
+    font-weight: 800;
+}
+
+main {
+    opacity: 1;
+}

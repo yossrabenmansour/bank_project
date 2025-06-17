@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>bank project</title>
+       <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+        <h3>Log in to get started </h3>
+        <img src="./logo.png" alt="logo" class="logo">
+        <nav>
+            <input type="text" placeholder="user" class="user">
+            <input type="number" placeholder="PIN" class="pin">
+            <span class="log-in"><i class="fa-solid fa-arrow-right"></i></span>
+        </nav>
+    </header>
+    <main>
+    <section class="main-header">
+        <div class="current">
+        <h2>Current balance </h2>
+        <p>As of 05/03/2037</p>
+        </div> 
+        <h1 class="amount">0000<i class="fa-solid fa-euro-sign"></i></h1>
+    </section>
+    <section class="money-mvt">
+    <section class="left-side">
+        <div class="deposit-container">
+            <div class="deposit-info">
+               <span class="deposit ">2 DEPOSIT </span>
+             <span class="date">3 DAYS AGO </span>
+            </div>
+            <p class="dep-amount">4000 <i class="fa-solid fa-euro-sign"></i></p>
+        </div>
+        <hr>
+        <div class="withdrawal-container">
+            <div class="withdrawal-info">
+                <span class="withdrawal"> 1 WITHDRAWAL</span>
+                <span class="date">24/04/2037</span>
+            </div>
+            <p class="with-amount">-378 <i class="fa-solid fa-euro-sign"></i> </p>
+        </div>
+        <hr>
+    </section>
+    
+    <section class="right-side ">
+<!-- transfert box  -->
+      <div class="transfert-box">
+            <h3 class="box-title">transfert money</h3>
+            <form class="transfert-form">
+              <input class="transfert-user" type="text" />
+              <input class="amount-transfert-input" type="number" />
+              <button class="transfert-button">
+                <i class="fa-solid fa-arrow-right fa-xl"></i>
+              </button>
+              <label class="label-transfert">Transfert To</label>
+              <label class="label-amount-transfert">Amount</label>
+            </form>
+          </div>
+
+        </div>
+      
+          
+          <!-- ///// loan box ::: -->
+
+          <div class="loan-box">
+            <h3 class="box-title">Request Loan</h3>
+            <form class="loan-form">
+              <input class="loan-input" type="number" />
+              <button class="loan-button">
+                <i class="fa-solid fa-arrow-right fa-xl"></i>
+              </button>
+              <label class="label-amount-loan">Amount</label>
+            </form>
+          </div>
+
+        
+          <!-- ///// close account ::  -->
+
+          <div class="close-box">
+            <h3 class="box-title">Close account</h3>
+            <form class="close-form">
+              <input class="close-user" type="text" />
+              <input class="close-pin" type="number" />
+              <button class="close-button">
+                <i class="fa-solid fa-arrow-right fa-xl"></i>
+              </button>
+              <label class="label-user-close">Confirm User</label>
+              <label class="label-pin-close">Confirm Pin</label>
+            </form>
+          </div>
+    </section>
+    </section>
+    </main>
+  <footer>
+        <div class="sum-container">
+         <span class="mov-info-in">IN</span> <span class="mov-average-in">0000 <i class="fa-solid fa-euro-sign euro"></i></span> 
+         <span class="mov-info-out">OUT</span> <span class="mov-average-out">0000 <i class="fa-solid fa-euro-sign euro"></i></span> 
+         <span class="mov-info-interest">INTEREST</span> <span class="mov-average-interest">0000 <i class="fa-solid fa-euro-sign euro"></i></span> 
+        </div>
+        <p class="sort"><i class="fa-solid fa-arrow-down-long"></i> SORT</p>
+        <span class="logged-out">YOU WILL BE LOGGED OUT IN <span class="logged-out-timer">5:00</span> </span> 
+      </footer>
+</body>
+</html>
